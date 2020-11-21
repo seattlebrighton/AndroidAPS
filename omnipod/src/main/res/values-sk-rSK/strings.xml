@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Omnipod -->
-    <!-- Omnipod - Base -->
-    <string name="omnipod_pump_description">Integrácia pumpy pre Omnipod, vyžaduje zariadenie RileyLink (s firmwarom aspoň 2.0).</string>
-    <!-- Omnipod Configuration -->
+    <!-- Omnipod - Keys -->
+    <!-- Omnipod - Non translatable -->
+    <!-- Omnipod - Preferences -->
     <string name="omnipod_config_bolus_beeps_enabled">Pípnutie pri boluse povolené</string>
     <string name="omnipod_config_basal_beeps_enabled">Pípnutie pri bazále povolené</string>
     <string name="omnipod_config_smb_beeps_enabled">Pípnutie pri SMB povolené</string>
@@ -15,33 +14,53 @@
     <string name="omnipod_config_expiration_reminder_hours_before_shutdown">Hodiny pred vypnutím</string>
     <string name="omnipod_config_low_reservoir_alert_enabled">Upozornenie na nízký stav zásobníka povolené</string>
     <string name="omnipod_config_low_reservoir_alert_units">Počet jednotiek</string>
-    <!-- Omnipod - Fragment -->
-    <string name="omnipod_moments_ago">Pred chvíľou</string>
-    <string name="omnipod_overview_pod_status">Stav Podu</string>
-    <string name="omnipod_overview_total_delivered">Celkovo podané</string>
-    <string name="omnipod_overview_total_delivered_value">%1$.2f JI</string>
-    <string name="omnipod_overview_reservoir_value">Zostáva %1$.2f JI</string>
-    <string name="omnipod_overview_reservoir_value_over50">Viac ako 50 JI</string>
-    <string name="omnipod_overview_pod_address">Adresa Podu</string>
-    <string name="omnipod_overview_pod_expiry_date">Expirácia Podu</string>
-    <string name="omnipod_warning">Upozornenie</string>
+    <string name="omnipod_config_notification_uncertain_tbr_sound_enabled">Zvuk upozornenia pre neistý dočasný bazál povolený</string>
+    <string name="omnipod_preference_category_rileylink">RileyLink</string>
+    <string name="omnipod_preference_category_other">Iné</string>
+    <string name="omnipod_preference_category_alerts">Výstrahy</string>
+    <string name="omnipod_preference_category_confirmation_beeps">Potvrdzujúce pípnutie</string>
+    <!-- Omnipod - Pod Status -->
     <string name="omnipod_pod_status_no_active_pod">Žiadny aktívny Pod</string>
-    <string name="omnipod_pod_status_waiting_for_activation">Inštalácia prebieha (čakanie na párovanie a plnenie)</string>
     <string name="omnipod_pod_status_waiting_for_cannula_insertion">Inštalácia prebieha (čaká sa na vloženie kanyly)</string>
-    <string name="omnipod_pod_status_running">V prevádzke</string>
-    <string name="omnipod_pod_status_suspended">Pozastavené</string>
-    <string name="omnipod_pod_status_pod_fault">Chyba Podu</string>
-    <string name="omnipod_pod_status_activation_time_exceeded">Bol prekročený čas aktivácie</string>
-    <string name="omnipod_pod_status_inactive">Neaktívny</string>
-    <string name="omnipod_pod_status_pod_fault_description">Chyba Podu: %1$s %2$s</string>
-    <string name="omnipod_overview_pod_active_alerts">Výstrahy aktívneho Podu</string>
-    <!-- Omnipod - Dialogs -->
-    <string name="omnipod_frequency">Omnipod (433,91 MHz)</string>
+    <!-- Omnipod - Alerts -->
+    <string name="omnipod_alert_finish_setup_reminder_reminder">Pripomienka ukončenia nastavenia</string>
+    <string name="omnipod_alert_expiration">Pod čoskoro expiruje</string>
+    <string name="omnipod_alert_expiration_advisory">Pod čoskoro expiruje</string>
+    <string name="omnipod_alert_shutdown_imminent">Vypnutie je bezprostredné</string>
+    <string name="omnipod_alert_low_reservoir">Nízka hladina zásobníka</string>
+    <string name="omnipod_alert_unknown_alert">Neznáma výstraha</string>
+    <!-- Omnipod - History -->
+    <string name="omnipod_history_item_description">Popis</string>
+    <string name="omnipod_history_item_source">Zdroj</string>
+    <string name="omnipod_history_item_date">Dátum</string>
+    <string name="omnipod_history_type">Typ:</string>
     <!-- Omnipod - Error -->
+    <string name="omnipod_warning">Upozornenie</string>
     <string name="omnipod_error_rileylink_address_invalid">Neplatná adresa RileyLinku.</string>
     <string name="omnipod_error_operation_not_possible_no_configuration">Operácia nie je možná.\n\nNajskôr je nutné nakonfigurovať Omnipod, kým bude možné túto funkciu použiť.</string>
     <string name="omnipod_error_pod_not_attached">Žiadny aktívny Pod</string>
-    <!-- Omnipod - Pod Mgmt -->
+    <string name="omnipod_error_set_basal_failed_delivery_might_be_suspended">Nastavenie bazálneho profilu zlyhalo. Podávanie môže byť pozastavené! Manuálne obnovte stav Podu zo záložky Omnipod a pokračujte v podávaní, ak je to potrebné.</string>
+    <string name="omnipod_error_set_basal_might_have_failed_delivery_might_be_suspended">Nastavenie bazálneho profilu zlyhalo. Podávanie môže byť pozastavené! Manuálne obnovte stav Podu zo záložky Omnipod a pokračujte v podávaní, ak je to potrebné.</string>
+    <string name="omnipod_error_set_basal_failed_delivery_suspended">Nastavenie bazálneho profilu zlyhalo. Podávanie je pozastavené! Manuálne obnovte podávanie zo záložky Omnipod.</string>
+    <string name="omnipod_error_set_basal_failed">Nastavenie bazálneho profilu zlyhalo.</string>
+    <string name="omnipod_error_cancel_temp_basal_failed_uncertain">Zrušenie dočasného bazalu mohlo zlyhať. Manuálne obnovte stav Podu zo záložky Omnipod.</string>
+    <string name="omnipod_error_set_temp_basal_failed_old_tbr_might_be_cancelled">Nastavenie dočasného bazálu zlyhalo. Ak bol predtým spustený dočasný bazál, mohol byť zrušený. Manuálne obnovte stav Podu zo záložky Omnipod.</string>
+    <string name="omnipod_error_set_temp_basal_failed_old_tbr_cancelled_new_might_have_failed">Nastavenie dočasného bazálu zlyhalo. Ak bol predtým spustený dočasný bazál, mohol byť zrušený. Manuálne obnovte stav Podu zo záložky Omnipod.</string>
+    <string name="omnipod_error_set_temp_basal_failed_validation">Doba trvania TBR musí byť väčšia ako nula, a musí byť násobkom %1$s minút.</string>
+    <string name="omnipod_error_set_time_failed_delivery_might_be_suspended">Nastavenie času, pravdepodobne zlyhalo. Podávanie môže byť pozastavené! Manuálne obnovte stav Podu zo záložky Omnipod a pokračujte v podávaní, ak je to potrebné.</string>
+    <string name="omnipod_error_set_time_failed_delivery_suspended">Nastavenie času zlyhalo. Podávanie je pozastavené! Manuálne obnovte podávanie zo záložky Omnipod.</string>
+    <string name="omnipod_error_failed_to_set_profile_empty_profile">Nepodarilo sa nastaviť bazálny profil: bol prijatý prázdny profil. Uistite sa, že ste aktivovali svoj bazálny profil.</string>
+    <string name="omnipod_error_set_initial_basal_schedule_no_profile">Žiadny bazálny profil nie je aktívny. Uistite sa, že ste aktivovali svoj bazálny profil.</string>
+    <string name="omnipod_error_unknown_custom_command">Neznámy vlastný príkaz: %1$s</string>
+    <string name="omnipod_error_failed_to_read_pulse_log">Zlyhalo načítanie Pulse Log</string>
+    <string name="omnipod_error_failed_to_refresh_status">Nepodarilo sa obnoviť stav</string>
+    <string name="omnipod_error_failed_to_acknowledge_alerts">Nepodarilo sa potvrdiť výstrahy</string>
+    <string name="omnipod_error_failed_to_suspend_delivery">Nepodarilo sa pozastaviť podávanie inzulínu</string>
+    <string name="omnipod_error_failed_to_set_time">Nepodarilo sa nastaviť čas</string>
+    <string name="omnipod_error_failed_to_resume_delivery">Podávanie inzulínu sa nepodarilo spustiť</string>
+    <string name="omnipod_error_failed_to_verify_activation_progress">Nepodarilo sa overiť priebeh aktivácie. Skúste to znova.</string>
+    <!-- Omnipod - Confirmation -->
+    <!-- Omnipod - Commands -->
     <string name="omnipod_cmd_deactivate_pod">Deaktivovať Pod</string>
     <string name="omnipod_cmd_discard_pod">Vyradiť Pod</string>
     <string name="omnipod_cmd_set_bolus">Nastaviť bolus</string>
@@ -58,59 +77,23 @@
     <string name="omnipod_cmd_suspend_delivery">Pozastaviť dodávanie inzulínu</string>
     <string name="omnipod_cmd_resume_delivery">Pokračovať v dodávaní inzulínu</string>
     <string name="omnipod_cmd_unknown_entry">Neznáma položka</string>
-    <string name="omnipod_pod_activation_wizard_fill_pod_title">Naplňte Pod</string>
-    <string name="omnipod_pod_activation_wizard_fill_pod_text">\nNaplňte nový Pod dostatočným množstvom inzulínu na 3 dni.\n\nSledujte dve pípnutia z Podu v priebehu procesu plnenia. Tieto ukazujú, že minimálne množstvo 85JI bolo naplnené. Uistite sa, že striekačka je úplne vyprázdnená a to i po vypočutí dvoch pípnutí.\n\nPo naplnení Podu, prosím, stlačte <b>Další</b>.\n\n<b>Poznámka:</b> zatiaľ nedávajte dole kryt ihly.\n<b>Poznámka:</b>prosím umiestnite RileyLink vo zvislej pozícii blízko Podu.</string>
-    <string name="omnipod_pod_activation_wizard_initialize_pod_title">Plnenie</string>
-    <string name="omnipod_pod_activation_wizard_initialize_pod_text">Pokúste sa spárovať s novým Podom a naplňte ho.\n\nKeď sú všetky položky zaškrtnuté, môžete stlačiť <b>Ďalej</b>.\n\n<b>Poznámka:</b> prosím držte teraz Pod veľmi blízko RileyLinku.</string>
-    <string name="omnipod_pod_activation_wizard_attach_pod_title">Pripevni Pod</string>
-    <string name="omnipod_pod_activation_wizard_attach_pod_text">\nPripravte infúzny set. Odstráňte krytku ihly na Pode a ochranu samolepky a pripojte Pod k infúznemu setu. \n\nAk sa kanyla odlepí, prosím stlačte <b>Zrušiť</b> a zahoďte Váš Pod.\n\nStlačte <b>Ďalšia</b> na zavedenie kanyly a začiatok podávania bazálu.</string>
-    <string name="omnipod_pod_activation_wizard_insert_cannula_title">Zavedenie kanyly</string>
-    <string name="omnipod_pod_activation_wizard_insert_cannula_text">Pokúšam sa nastaviť počiatočnú bazálnu dávku a zaviesť kanylu.\n\nAk sú všetky položky označené, môžete stlačiť <b>Ďalší</b>.</string>
-    <string name="omnipod_pod_activation_wizard_pod_activated_title">Informácie o Pode</string>
-    <string name="omnipod_pod_activation_wizard_pod_activated_text">\nPod je teraz aktívny.\n\nVaša bazálna dávka je nastavená a kanyla bola zavedená.\n\nProsím skontrolujte, či bola kanyla zavedená správne a ak máte pocit, že nie, tak vymeňte Pod.</string>
-    <string name="omnipod_pod_deactivation_wizard_deactivate_pod_title">Deaktivovať Pod</string>
-    <string name="omnipod_pod_deactivation_wizard_deactivate_pod_text">\nStlačte <b>Ďalej</b> pre deaktiváciu Podu.\n\n<b>Poznámka:</b> Toto preruší celkovo podávanie inzulínu a deaktivuje Pod.</string>
-    <string name="omnipod_pod_deactivation_wizard_deactivating_pod_title">Deaktivácia Podu</string>
-    <string name="omnipod_pod_deactivation_wizard_deactivating_pod_text">Deaktivujem Pod.\n\nKeď sú všetky položky zaškrtnuté, môžete stlačiť <b>Ďalej</b>.\n\n<b>Poznámka:</b> Ak deaktivácia neustále zlyháva, stlačte prosím <b>Zrušiť</b> a použite možnosť <b>Resetovať Pod</b>, na nútené obnovenie stavu Podu.</string>
-    <string name="omnipod_pod_deactivation_wizard_pod_deactivated_text">Pod deaktivovaný.\n\nProsím odstráňte Pod z Vášho tela a zlikvidujte ho.</string>
-    <!-- Omnipod - Base -->
-    <string name="omnipod_alert_finish_pairing_reminder">Pripomienka ukončenia párovania</string>
-    <string name="omnipod_alert_finish_setup_reminder_reminder">Pripomienka ukončenia nastavenia</string>
-    <string name="omnipod_alert_expiration">Pod čoskoro expiruje</string>
-    <string name="omnipod_alert_expiration_advisory">Pod čoskoro expiruje</string>
-    <string name="omnipod_alert_shutdown_imminent">Vypnutie je bezprostredné</string>
-    <string name="omnipod_alert_low_reservoir">Nízka hladina zásobníka</string>
-    <string name="omnipod_alert_unknown_alert">Neznáma výstraha</string>
-    <string name="omnipod_error_set_basal_failed_delivery_might_be_suspended">Nastavenie bazálneho profilu zlyhalo. Podávanie môže byť pozastavené! Manuálne obnovte stav Podu zo záložky Omnipod a pokračujte v podávaní, ak je to potrebné.</string>
-    <string name="omnipod_error_set_basal_might_have_failed_delivery_might_be_suspended">Nastavenie bazálneho profilu zlyhalo. Podávanie môže byť pozastavené! Manuálne obnovte stav Podu zo záložky Omnipod a pokračujte v podávaní, ak je to potrebné.</string>
-    <string name="omnipod_error_set_basal_failed_delivery_suspended">Nastavenie bazálneho profilu zlyhalo. Podávanie je pozastavené! Manuálne obnovte podávanie zo záložky Omnipod.</string>
-    <string name="omnipod_error_set_temp_basal_failed_old_tbr_might_be_cancelled">Nastavenie dočasného bazálu zlyhalo. Ak bol predtým spustený dočasný bazál, mohol byť zrušený. Manuálne obnovte stav Podu zo záložky Omnipod.</string>
-    <string name="omnipod_error_set_temp_basal_failed_old_tbr_cancelled_new_might_have_failed">Nastavenie dočasného bazálu zlyhalo. Ak bol predtým spustený dočasný bazál, mohol byť zrušený. Manuálne obnovte stav Podu zo záložky Omnipod.</string>
-    <string name="omnipod_error_set_time_failed_delivery_might_be_suspended">Nastavenie času, pravdepodobne zlyhalo. Podávanie môže byť pozastavené! Manuálne obnovte stav Podu zo záložky Omnipod a pokračujte v podávaní, ak je to potrebné.</string>
-    <string name="omnipod_error_set_time_failed_delivery_suspended">Nastavenie času zlyhalo. Podávanie je pozastavené! Manuálne obnovte podávanie zo záložky Omnipod.</string>
-    <string name="omnipod_lot">LOT</string>
-    <string name="omnipod_tid">TID</string>
-    <string name="omnipod_overview_firmware_version">Verzia firmvéru</string>
-    <string name="omnipod_overview_errors">Chyby</string>
-    <string name="omnipod_custom_action_reset_rileylink">Resetovať konfiguráciu RileyLinku</string>
-    <string name="omnipod_composite_time">%1$s a %2$s</string>
-    <string name="omnipod_time_ago">pred %1$s min</string>
-    <string name="omnipod_pod_management_waiting_for_rileylink_connection">Čaká sa na pripojenie RileyLinku...</string>
-    <string name="omnipod_less_than_a_minute_ago">Pred menej ako minútou</string>
-    <string name="omnipod_cmd_initialize_pod">Spáruj a naplň</string>
-    <string name="omnipod_cmd_insert_cannula">Naplňte kanylu a nastavte bazálny profil</string>
     <string name="omnipod_cmd_set_fake_suspended_tbr">Nastaviť falošný dočasný bazál, pretože Pod je pozastavený</string>
     <string name="omnipod_cmd_cancel_fake_suspended_tbr">Zrušiť falošný dočasný bazál ktorý bol vytvorený, pretože Pod bol pozastavený</string>
-    <string name="omnipod_uncertain">neznáme</string>
-    <string name="omnipod_preference_category_rileylink">RileyLink</string>
-    <string name="omnipod_preference_category_other">Iné</string>
-    <string name="omnipod_preference_category_alerts">Výstrahy</string>
-    <string name="omnipod_preference_category_confirmation_beeps">Potvrdzujúce pípnutie</string>
+    <!-- Omnipod - Pod Management -->
+    <!-- Omnipod - Wizard common -->
+    <string name="omnipod_wizard_button_finish">Dokončiť</string>
     <string name="omnipod_wizard_button_next">Ďalšia</string>
-    <string name="omnipod_history_item_description">Popis</string>
-    <string name="omnipod_history_item_source">Zdroj</string>
-    <string name="omnipod_history_item_date">Dátum</string>
-    <string name="omnipod_history_type">Typ:</string>
+    <!-- Omnipod - Pod activation Wizard -->
+    <!-- Omnipod - Pod deactivation Wizard -->
+    <!-- Omnipod - Overview -->
+    <!-- Omnipod - Other -->
+    <string name="omnipod_custom_action_reset_rileylink">Resetovať konfiguráciu RileyLinku</string>
+    <string name="omnipod_uncertain">neznáme</string>
+    <!-- Omnipod - Times -->
+    <string name="omnipod_moments_ago">Pred chvíľou</string>
+    <string name="omnipod_less_than_a_minute_ago">Pred menej ako minútou</string>
+    <string name="omnipod_composite_time">%1$s a %2$s</string>
+    <string name="omnipod_time_ago">pred %1$s min</string>
     <plurals name="omnipod_minutes">
         <item quantity="one">%1$d minúta</item>
         <item quantity="few">%1$d minút</item>
