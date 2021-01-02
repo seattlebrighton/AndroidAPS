@@ -80,7 +80,7 @@ public class TreatmentsPlugin extends PluginBase implements TreatmentsInterface 
     private final FabricPrivacy fabricPrivacy;
     private final DateUtil dateUtil;
 
-    private CompositeDisposable disposable = new CompositeDisposable();
+    private final CompositeDisposable disposable = new CompositeDisposable();
 
     protected TreatmentService service;
 
@@ -111,6 +111,7 @@ public class TreatmentsPlugin extends PluginBase implements TreatmentsInterface 
         super(new PluginDescription()
                         .mainType(PluginType.TREATMENT)
                         .fragmentClass(TreatmentsFragment.class.getName())
+                        .pluginIcon(R.drawable.ic_treatments)
                         .pluginName(R.string.treatments)
                         .shortName(R.string.treatments_shortname)
                         .alwaysEnabled(true)
